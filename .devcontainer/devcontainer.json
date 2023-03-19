@@ -4,7 +4,7 @@
 	"name": "Contoso Supermarket",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"build": {
-		"dockerfile": "../src/Dockerfile"
+		"dockerfile": "../contoso-supermarket/src/Dockerfile"
 	},
 	"customizations": {
         "vscode": {
@@ -30,7 +30,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": ["5000:5000"],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r src/requirements.txt"
+	"postCreateCommand": "pip3 install --user -r contoso-supermarket/src/requirements.txt"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
