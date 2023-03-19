@@ -28,9 +28,9 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": ["5000:5000"]
+	"forwardPorts": ["5000:5000"],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r src/requirements.txt"
+	"postCreateCommand": "pip3 install --user -r src/requirements.txt"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
