@@ -25,4 +25,4 @@ jobs:
         uses: devcontainers/ci@v0.2
         with:
           imageName: ghcr.io/${{ github.repository }}/devcontainer
-          runCmd: pytest .
+          runCmd: python -m unittest contoso-supermarket/tst/test_unittest.py
